@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+
+
 <head>
   <meta charset="utf-8">
   <title>Welcome</title>
   <!-- Links -->
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--For node-->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
 
   <!-- Bootstrap Scripts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -34,6 +40,7 @@
 </head>
 
 <body>
+<div name="" id="menu"><!--Pentru meniul de buy-->
 
   <section id="title">
     <div class="container-fluid" id="container-fluid">
@@ -184,15 +191,15 @@
     <div class="row g-0">
 
             <!-- ------------------ SoftWare Starter Pack ------------------  -->
-      <div class="col-lg-4 col-md-6" id="col">
+      <div class="col-lg-4 col-md-12" id="col">
         <div class="card" id="card">
           <div class="card-header" id="card-header">
             <br>
-            <h2 id="h2-pret">SoftWare Starter Pack</h2>
+            <h2 id="serviciu" name="serviciu">SoftWare Starter Pack</h2>
             <br>
           </div>
           <div class="card-body">
-            <h5 id="h5"><span>Pret: 200 RON</span></h5>
+            <h5 id="h5">Pret: 200 RON</h5>
             <h2 id="h4-pret"><span>Activare:+80 RON</span></h2>
             <br>
             <p>Windows 10/11 </p>
@@ -201,25 +208,24 @@
             <p>Imbunatatirea Performantei</p>
             <p>Incliude Driver-up Pack</p>
             <br>
-
-            <a href="#footer" class="btn btn-lg btn-outline-dark">Cumpara serviciul</a>
-          </div>
+              <button class="btn btn-lg btn-outline-dark" id="openMenu" name="button" value="SoftWare Starter Pack"><span value="280 RON">Cumpara serviciul</span>
+            </div>
         </div>
       </div>
 
 
           <!-- ------------------ Level-up Pack ------------------  -->
-      <div class="col-lg-4 col-md-6" id="col">
+      <div class="col-lg-4 col-md-12" id="col">
         <div class="card" id="card">
           <div class="card-header" id="card-header">
             <br>
-            <h2 id="h2-pret">Level-up Pack</h2>
+            <h2 id="serviciu" name="serviciu">Level-up Pack</h2>
             <br>
           </div>
           <div class="card-body">
             <p></p>
             <h5 id="h4-pret"> Upgrade Componente</h5>
-            <h5 id="h4-pret"><span>Pret de baza: 50 RON</span></h5>
+            <h5 id="h4-pret">Pret de baza: 50 RON </h5>
             <br>
             <section style="font-weight: 600;">
               <p>Placa Video:+10 RON</p>
@@ -229,17 +235,17 @@
               <p>Carcasa:+50 RON</p>  
             </section>
             <br>
-            <a href="#footer" class="btn btn-lg btn-outline-dark">Cumpara serviciul</a>
+            <button class="btn btn-lg btn-outline-dark" id="openMenu" value="Level-up Pack"><span id="50 RON"></span>Cumpara serviciul</a>
           </div>
         </div>
       </div>
 
           <!-- ------------------- Power Build Pack ------------------  -->
-      <div class="col-lg-4 col-md-6" id="col">
+      <div class="col-lg-4 col-md-12" id="col">
         <div class="card" id="card">
           <div class="card-header" id="card-header">
             <br>
-            <h2 id="h2-pret">Power Build Pack</h2>
+            <h2 id="serviciu" name="serviciu">Power Build Pack</h2>
             <br>
           </div>
           <div class="card-body">
@@ -252,21 +258,21 @@
             <p>Aspect Aesthetic</p>
             <p>AirFlow profesional</p>
             <br>
-            <a href="#footer" class="btn btn-lg btn-outline-dark">Cumpara serviciul</a>
+            <button class="btn btn-lg btn-outline-dark" id="openMenu" value="Power Build Pack" ><span id="150 RON"></span>Cumpara serviciul</a>
           </div>
         </div>
       </div>
 
           <!-- ------------------- Pixel Purity PRO Pack ------------------  -->
-      <div class="col-lg-4 col-md-6" id="col">
+      <div class="col-lg-4 col-md-12" id="col">
         <div class="card" id="card">
           <div class="card-header" id="card-header">
             <br>
-            <h2 id="h2-pret">Pixel Purity PRO Pack</h2>
+            <h2 id="serviciu" name="serviciu">Pixel Purity PRO Pack</h2>
             <br>
           </div>
           <div class="card-body">
-            <h5 id="h5"><span>Pret: 150 RON</span></h5>
+            <h5 id="h5"><span>Pret: <span  id="price"> 150 RON </span></span></h5>
             <h5 id="h4-pret">Include:</h5>
             <br>
             <p class="pret-optiuni" style="margin: 0 0 6px;">Curatare PC (100 RON)</p>
@@ -275,21 +281,21 @@
             <p>Pasta de calitate inalta</p>
             <p>Curatare Profesionala si detaliata</p>
             <br>
-            <a href="#footer" class="btn btn-lg btn-outline-dark">Cumpara serviciul</a>
+            <button class="btn btn-lg btn-outline-dark" id="openMenu" value="Pixel Purity PRO Pack"><span id="150 RON"></span> Cumpara serviciul</a>
           </div>
         </div>
       </div>
 
             <!-- ------------------- Driver-Up Pack ------------------  -->
-        <div class="col-lg-4 col-md-6" id="col">
+        <div class="col-lg-4 col-md-12" id="col" >
           <div class="card" id="card">
             <div class="card-header" id="card-header">
               <br>
-              <h2 id="h2-pret">Driver-Up Pack</h2>
+              <h2 id="serviciu" name="serviciu">Driver-Up Pack</h2>
               <br>
             </div>
             <div class="card-body">
-              <h5 id="h5" style="padding: 15px 0 15px 0;"><span>Pret: 150 RON</span></h5>
+              <h5 id="h5" style="padding: 15px 0 15px 0;">Pret: 150 RON </h5>
               <br>
               <p style="padding-bottom: 10px;">Update BIOS</p>
               <p style="padding-bottom: 10px;">Update drivere CPU</p>
@@ -297,21 +303,21 @@
               <p style="padding-bottom: 10px;">Update Windows</p>
               <br>
               <div  style="padding-bottom: 14px;"> </div>
-              <a href="#footer" class="btn btn-lg btn-outline-dark">Cumpara serviciul</a>
+              <button class="btn btn-lg btn-outline-dark" id="openMenu" value="Driver-Up Pack"><span id="150 RON"></span>Cumpara serviciul</a>
             </div>
           </div>
         </div>
 
             <!-- ------------------- Gamer Guardian Pack ------------------  -->
-      <div class="col-lg-4 col-md-6" id="col">
+      <div class="col-lg-4 col-md-12" id="col">
         <div class="card" id="card">
           <div class="card-header" id="card-header">
             <br>
-            <h2 id="h2-pret">Gamer Guardian Pack</h2>
+            <h2 id="serviciu" name="serviciu">Gamer Guardian Pack</h2>
             <br>
           </div>
           <div class="card-body">
-            <h5 id="h5" style="padding: 15px 0 15px 0;"><span>Pret: 100 RON</span></h5>
+            <h5 id="h5" style="padding: 15px 0 15px 0;"> Pret: 100 RON </h5>
             <br>
             <p style="padding-bottom: 10px;">Verificare sisteme de protectie</p>
             <p style="padding-bottom: 10px;">Diagnosticarea sistemului</p>
@@ -319,7 +325,7 @@
             <p style="padding-bottom: 10px;">Optimizarea performantei</p>
             <br>
             <div  style="padding-bottom: 14px;"> </div>
-            <a href="#footer" class="btn btn-lg btn-outline-dark">Cumpara serviciul</a>
+            <button class="btn btn-lg btn-outline-dark" id="openMenu" name="title" value="Gamer Guardian Pack"><span id="100 RON"></span>Cumpara serviciul</button>
 
           </div>
         </div>
@@ -350,7 +356,7 @@
         </div>
       </div>
       <div class="">
-        <h4>
+        <h4 id="reasonsH4">
           Unul dintre cele frecvente cauze ale diminuarii performantei si eficientei unui sistem
           sunt Update-urile. Un sistem cu update-uri de soft vechi nu poate functiona la capacitatile
           sale maxime, scazand performanta placii video si a procesorului, dar si marind riscul de 
@@ -371,7 +377,7 @@
         </div>
       </div>
       <div class="" style="text-align: right;">
-        <h4>
+        <h4 id="reasonsH4">
             Cel mai mare inamic al ventilatoarelor si heatsink-urilor este praful. Acumularea de parf inauntrul
           sistemului poate fi inocenta la inceput, chiar inofensiva, dar in timp poate duce la probleme severe
           de racire, uneori chiar si de 30 de grade. Acest blocaj al disiparii de caldura duce la supraincalzirea
@@ -392,7 +398,7 @@
         </div>
       </div>
       <div class="">
-        <h4>
+        <h4 id="reasonsH4">
             Cel mai mare inamic al calculatoarelor il reprezinta User-ul. Pe langa deteriorarea software-ului accesarea 
           de link-uri neprotejate si download-ul de fisiere malware, omul poate deteriora un calculator si pe partea fizica.
           Achizitionarea de componente incompatibile care rezulta in bottleneck-uri, pierderi de FPS-uri, probleme de racire,
@@ -400,7 +406,7 @@
 
         </h4>`
         <p style="height: 2px;"></p>
-        <h4>
+        <h4 id="reasonsH4">
             Dar cea mai mare greseala o reprezinta lipsa de cunostinte legata de asamblarea corecta a unui calculator.
           Asamblarea unui calculator fara experienta poate duce la pini indoiti pe CPU/Motherboard, placi de RAM incorect 
           montate, cabluri conectate incorect, care pot duce la arderea firului si deteriorarea permanenta acomponentelor,
@@ -413,85 +419,86 @@
 
 
   <!-- PC Parts Picker help -->
-  <!-- <section id="PCPP" class="">
-    <div id="servicii" style="padding-bottom: 5rem;">
-      <h2 id="servicii-h2" style="font-size: 3rem;">
-        Construiește-ți calculatorul de vis cu consultanța noastră.     
-      </h2>
-      <p id="servicii-p"  style="font-size: 2rem;"> 
-        Asistenta personalizată pentru performanta extraordinară. 
-      </p>
-      <button class="btn btn-lg btn-outline-dark" id="openMenu">Cumpara serviciul</button>
+  <section id="PCPP" class="">
+      <div id="servicii" style="padding-bottom: 5rem;">
+        <h2 id="servicii-h2" style="font-size: 3rem;">
+          Construiește-ți calculatorul de vis cu consultanța noastră.     
+       </h2>
+        <p id="servicii-p"  style="font-size: 2rem;"> 
+          Asistenta personalizată pentru performanta extraordinară. 
+        </p>
+        <br>
+        <button class="btn btn-lg btn-outline-dark" id="openMenu" value="Other Options">Cumpara serviciul</button>
 
-  </div>
+    </div>
+  </section>
+
+</div> <!-- Final Menu1-->
 
 
- <-- Buy Menu -->
-<!--
+
+ <!-- Buy Menu -->
+
   <div id="menuContainer" class="hidden">
-      <h1>
-        Selectati Sereiciile de care aveti nevoie:
+      <!-- <h1 id="HtmlServiciu" name="HtmlServiciu">
+        Selectati Serviciile de care aveti nevoie:
+      </h1> -->
+    <!-- <form id="emailForm"> -->
+     <form id="emailForm EmailForm" action="/send-email" method="POST">
+      <h1 id="HtmlServiciu" name="HtmlServiciu">
+        Selectati Serviciile de care aveti nevoie:
       </h1>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="50">
-        <label class="form-check-label" for="flexSwitchCheckDefault">PC Part Picker</label>
-      </div>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="70">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Instalare Windows</label>
-      </div>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="70">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Instalare Office</label>
-      </div>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="80">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Licenta</label>
-      </div>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="100">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Curatare</label>
-      </div>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="100">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Schimb pasta termoconductoare</label>
-      </div>
+      <div class="form-floating mb-3">
+            <input class="form-control" id="email" name="email" placeholder="name@example.com" required>
+            <label for="email" class="form-label">Gmail</label>
+          </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          <br/>
+          <div style="width: 0px;"id="sendPrice" name="sendPrice" value="" ></div>
+          <button name="button" value="" type="submit" class="form-control"; rows="4"; id="exampleFormControlTextarea1">
+           Send Email
+           </button>
+        </div>
+      </form>
+    <!-- </form>   -->
   </div>
 
-</section> -->
+
 
   <!-- Call to Action (contact) -->
 
-  <section id="cta">
+  <div id="menu"> <!--Inceput menu 2-->
 
-    <h3 class="footer-h3">Suntem specializați în soluții de software personalizate.</h3>
-    <br>
-    <br>
-    <br>
-    <a type="button" id="button-cta" class="btn btn-lg btn-dark">Contact Us</a>
+    <section id="cta">
 
-  </section>
+      <h3 class="footer-h3">Suntem specializați în soluții de software personalizate.</h3>
+      <br>
+      <br>
+      <br>
+      <a type="button" id="button-cta" class="btn btn-lg btn-dark">Contact Us</a>
+
+    </section>
 
 
   <!-- Footer -->
 
-  <footer id="footer">
-    <div class="bottom_links">
-      <a class="footer-link " href="https://www.instagram.com/x.toaster.x/?next=%2Fxtoaster.x%2F"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
-      <a class="footer-link " href="https://twitter.com/MUndead96"><i class="footer-icon fab fa-twitter fa-2x"></i></a>
-      <a class="footer-link " href="https://www.facebook.com/ionut.paiusan.9"><i class="footer-icon fab fa-facebook fa-2x"></i></a>
-    </div>
-    <p class="footer-p">© Copyright 2020 ServiceWare</p>
+    <footer id="footer">
+     <div class="bottom_links">
+        <a class="footer-link " href="https://www.instagram.com/x.toaster.x/?next=%2Fxtoaster.x%2F"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
+        <a class="footer-link " href="https://twitter.com/MUndead96"><i class="footer-icon fab fa-twitter fa-2x"></i></a>
+        <a class="footer-link " href="https://www.facebook.com/ionut.paiusan.9"><i class="footer-icon fab fa-facebook fa-2x"></i></a>
+      </div>
+      <p class="footer-p">© Copyright 2020 ServiceWare</p>
 
-  </footer>
+    </footer>
+
+  </section>
+  <script type="application/javascript" src="script.js"></script>
+
 </body>
 
-<script src="script.js"></script>
 
 </html>
+
